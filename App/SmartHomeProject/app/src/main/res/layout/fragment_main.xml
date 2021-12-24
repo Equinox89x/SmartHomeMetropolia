@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/divider4"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|clip_vertical|end"
+            app:srcCompat="@drawable/ic_edit_black_26dp" />
+
+        <TextView
+            android:id="@+id/lblHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/dbname"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutLights"
+        style="@style/GridElementBasics"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_height_big"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/grid_gutter_half"
+        android:background="@drawable/ic_ripple_pink"
+        android:contentDescription="To the list of lights"
+        app:layout_constraintEnd_toStartOf="@+id/divider4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutHome">
+
+        <ImageView
+            android:id="@+id/imgLight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:clickable="false"
+            app:srcCompat="@drawable/ic_light_bulb" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutShutters"
+        style="@style/GridElementBasics"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_height_big"
+        android:layout_marginStart="@dimen/grid_gutter_half"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_ripple_yellow"
+        android:contentDescription="Window shutter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toEndOf="@id/divider4"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutHome">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:src="@drawable/ic_window" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutTemperature"
+        style="@style/GridElementBasics"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_height_small"
+        android:layout_marginTop="@dimen/grid_gutter"
+        android:layout_marginEnd="@dimen/grid_gutter_half"
+        android:background="@drawable/ic_ripple_blue"
+        android:contentDescription="@string/accessTemperature"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutLights">
+
+        <ImageView
+            android:id="@+id/imgThermometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/ic_thermometer" />
+
+        <TextView
+            android:id="@+id/lblTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0°C"
+            android:textColor="@android:color/black"
+            android:textSize="32sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutHumidity"
+        style="@style/GridElementBasics"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_height_small"
+        android:layout_marginStart="@dimen/grid_gutter_half"
+        android:layout_marginTop="@dimen/grid_gutter"
+        android:layout_marginEnd="@dimen/grid_gutter_half"
+        android:background="@drawable/ic_ripple_blue"
+        android:contentDescription="The air humidity"
+        app:layout_constraintEnd_toStartOf="@+id/divider4"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutLights">
+
+        <ImageView
+            android:id="@+id/imgHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/ic_humidity" />
+
+        <TextView
+            android:id="@+id/lblHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="32sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutWeights"
+        style="@style/GridElementBasics"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_height_small"
+        android:layout_marginTop="@dimen/grid_gutter"
+        android:layout_marginEnd="@dimen/grid_gutter_half"
+        android:background="@drawable/ic_ripple_blue"
+        android:contentDescription="Your weight"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutTemperature">
+
+        <ImageView
+            android:id="@+id/imgWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/ic_weight_scale" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutSettings"
+        style="@style/GridElementBasics"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_height_small"
+        android:layout_marginStart="@dimen/grid_gutter_half"
+        android:layout_marginTop="@dimen/grid_gutter"
+        android:layout_marginEnd="@dimen/grid_gutter_half"
+        android:background="@drawable/ic_ripple_blue"
+        android:contentDescription="To settings"
+        app:layout_constraintEnd_toStartOf="@+id/divider4"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutHumidity">
+
+        <ImageView
+            android:id="@+id/imgSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="11dp"
+            app:srcCompat="@drawable/ic_settings" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutMap"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_height_big"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="12dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/divider4"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutShutters"
+        tools:context=".MapsActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mapCardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:longClickable="false"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="0dp">
+
+            <FrameLayout
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:longClickable="false" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutAlarm"
+        style="@style/GridElementBasics"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_height_small"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_ripple_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutMap">
+
+        <TextView
+            android:id="@+id/lblAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="32sp" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

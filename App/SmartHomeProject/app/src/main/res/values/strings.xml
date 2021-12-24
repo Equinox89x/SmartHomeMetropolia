@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SmartHomeProject</string>
+    <string name="home">Home of Bram</string>
+    <string name="homename">Who owns this house?</string>
+    <string name="street">Street</string>
+    <string name="postcalcode">Postal Code</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="number">Street Number</string>
+    <string name="btnSave">Save</string>
+    <string name="dbname">Home of %1$s</string>
+    <string name="temperature">%1$s %2$s</string>
+    <string name="alarmTriggered">Alarm %1$s !</string>
+    <string name="alarmUntriggered">Alarm %1$s</string>
+
+
+    <string name="accessAlarmTriggered">The alarm has been triggered!.</string>
+    <string name="accessAlarmUntriggered">The alarm not triggered.</string>
+    <string name="accessTemperature">The temperature is %1$s degrees %2$s.</string>
+    <string name="accessSavebtn">Save info.</string>
+    <string name="accessBackbtn">Go 1 page back.</string>
+    <string name="accessHomeName">Home of %1$s, click to edit information.</string>
+
+    <string name="accessCelsiusSetting">Use Fahrenheit instead of Celsius</string>
+    <string name="accessTTSSetting">Enable TTS</string>
+    <string name="accessHintSetting">Enable voice commands (Emma)</string>
+
+    <string name="settingOffOn">Turn setting %1$s</string>
+    <string name="settingTemp">Fahrenheit instead of Celsius</string>
+    <string name="settingTTS">Enable voice commands (EHMA)</string>
+    <string name="settingHint">Enable hints</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

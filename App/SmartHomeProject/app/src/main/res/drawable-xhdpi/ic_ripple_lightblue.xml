@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- An white rectangle ic_ripple_pink. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:state_checked="true">
+            <ripple android:color="@color/colorLightblueRipple">
+                <item>
+                    <shape>
+                        <corners android:radius="6dp" />
+                        <solid android:color="@color/colorLightblueRipple" />
+                    </shape>
+                </item>
+            </ripple>
+        </item>
+
+        <item>
+            <ripple android:color="@color/colorLightblueRipple">
+                <item>
+                    <shape>
+                        <corners android:radius="6dp" />
+                        <solid android:color="@color/colorLightblue" />
+                    </shape>
+                </item>
+            </ripple>
+        </item>
+
+    </selector>

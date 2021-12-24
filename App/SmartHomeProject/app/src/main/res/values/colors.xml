@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#ADDEEC</color>
+
+    <color name="colorPink">#FCC7D1</color>
+    <color name="colorPinkRipple">#FFEFF2</color>
+    <color name="colorYellow">#FFD6A6</color>
+    <color name="colorLightblue">#D2EFF5</color>
+    <color name="colorLightblueRipple">#F2FCFE</color>
+    <color name="colorYellowRipple">#FFF1E1</color>
+    <color name="colorBlue">#ADDEEC</color>
+    <color name="colorBlueRipple">#D8F6FF</color>
+    <color name="colorGreen">#C7F0E0</color>
+    <color name="colorGreenRipple">#EBFEF6</color>
+    <color name="colorRedRipple">#AB2B2B</color>
+    <color name="colorRed">#FF9581</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!--
+    colorBackground appears behind scrollable content and is used for the default window
+    background. colorSurface is mapped to the surface of components such as cards, sheets
+    and menus. colorError is used to indicate an error state for components such as
+    text fields>
+
+    "On" colors define how text, icons and strokes are colored in relation to the surface
+    on which they appear.-->
+    <color name="color_on_background">#FFFFFF</color>
+</resources>
